@@ -76,7 +76,7 @@ const Home = () => {
                                 </div>
                                 <div className='footer-featured'>
                                     <h5>{name}</h5>
-                                    <p>${price/100}</p>
+                                    <p>${price}</p>
                                 </div>
                             </article>
                         )

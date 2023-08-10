@@ -122,7 +122,7 @@ const ProductManage = React.memo((props) => {
       width: 200,
       headerAlign: 'center',
       align: 'center',
-      valueGetter: (params) => `${params?.value} đ`
+      valueGetter: (params) => `$${params?.value}`
     },
     {
       field: 'action',

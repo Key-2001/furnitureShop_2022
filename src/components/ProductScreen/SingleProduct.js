@@ -217,7 +217,7 @@ const SingleProduct = () => {
               </div>
               <p className="reviewer">({reviews} customer reviewers)</p>
             </div>
-            <h5>${price / 100}</h5>
+            <h5>${price}</h5>
             <p className="description">{description}</p>
             <p className="info">
               <span>available:</span>

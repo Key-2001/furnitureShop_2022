@@ -106,10 +106,10 @@ const Cart = (props) => {
                                         <p className='color-cart'>
                                             color: <span style={{backgroundColor:`${color}`}}/>
                                         </p>
-                                        <h5 className='price-small'>${price/100}</h5>
+                                        <h5 className='price-small'>${price}</h5>
                                     </div> 
                                 </div>
-                                <h5 className='price-cart'>${price/100}</h5>
+                                <h5 className='price-cart'>${price}</h5>
                                 <div className='amounts-btn'>
                                     {amountCart===1 ? 
                                     <button disabled style={{cursor: 'no-drop'}} type='button' className='dec-btn' >
@@ -131,7 +131,7 @@ const Cart = (props) => {
                                     </button>
                                     }
                                 </div>
-                                <h5 className='subtotal'>${price*amountCart/100}</h5>
+                                <h5 className='subtotal'>${price*amountCart}</h5>
                                 <button className='remove-btn' onClick={() => dispatch(removeCartItem({id, color})) }><MdOutlineRemoveShoppingCart/></button>
                             </article>
                         )

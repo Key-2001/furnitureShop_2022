@@ -173,10 +173,10 @@ const Register = ({setIsFormAuth}) => {
                               <button type='submit' className='wrap-login-container-content-form-btn'>
                                   Đăng ký
                               </button>
-                              <div className='login-or-divider'>
+                              {/* <div className='login-or-divider'>
                                   hoặc
-                              </div>
-                              <div className='wrap-login-container-content-form-facebook'>
+                              </div> */}
+                              {/* <div className='wrap-login-container-content-form-facebook'>
                                   <div className='wrap-login-container-content-form-facebook-inner'>
                                       Đăng nhập với Facebook
                                   </div>
@@ -191,7 +191,7 @@ const Register = ({setIsFormAuth}) => {
                                   <div className='wrap-login-container-content-form-google-img'>
                                       <img src='https://www.coolmate.me/images/google.svg' alt='googleLogo'/>
                                   </div>
-                              </div>
+                              </div> */}
                           </Form>
                         )
                       }}

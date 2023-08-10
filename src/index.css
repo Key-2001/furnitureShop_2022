@@ -42,6 +42,7 @@
 }
 
 /*Global Styles  */
+
 *,
 ::after,
 ::before{
@@ -58,6 +59,13 @@ font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Ca
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: .875rem;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: scroll;
+}
+
+body::-webkit-scrollbar{
+  display: none;
 }
 
 ul{

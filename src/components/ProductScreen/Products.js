@@ -46,7 +46,7 @@ const Products = () => {
     category: "",
     company: "",
     color: "",
-    price: 3000000,
+    price: 500,
     shipping: false,
     sort: getSortType(),
   });
@@ -107,7 +107,7 @@ const Products = () => {
         category: "",
         company: "",
         color: "",
-        price: 3000000,
+        price: 500,
         shipping: false,
         sort: getSortType(),
       };
@@ -227,11 +227,11 @@ const Products = () => {
               </div>
               <div className="form-control">
                 <h5>price</h5>
-                <p className="price">{query?.price} đ</p>
+                <p className="price">${query?.price}</p>
                 <input
                   type="range"
                   min="0"
-                  max="5000000"
+                  max="4000"
                   name="price"
                   value={query?.price}
                   onChange={handleChangePriceQuery}
@@ -320,14 +320,14 @@ const Products = () => {
                     {isTypeRender && (
                       <div className="footer-featured" style={{textTransform: 'unset'}}>
                         <h5>{name}</h5>
-                        <p style={{textTransform: 'unset'}}>{price} đ</p>
+                        <p style={{textTransform: 'unset'}}>${price}</p>
                       </div>
                     )}
 
                     {!isTypeRender && (
                       <div>
                         <h4>{name}</h4>
-                        <h5 style={{textTransform: 'unset'}}>{price} đ</h5>
+                        <h5 style={{textTransform: 'unset'}}>${price}</h5>
                         <p>{text}...</p>
 
                         <Link to={`/products/${id}`} className="btn">
