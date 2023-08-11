@@ -110,7 +110,7 @@ const NavbarAdmin = (props) => {
             
           </Breadcrumbs>
         </Box>
-        <AdminAccount>
+        {/* <AdminAccount>
           <Stack direction="row" sx={{ marginRight: "1rem" }} gap={3}>
             <Badge color="primary" badgeContent={3} showZero sx={{display: {xs: "none", md: "unset"}}}>
               <MailIcon
@@ -138,9 +138,9 @@ const NavbarAdmin = (props) => {
           >
             KeyLy
           </Button>
-        </AdminAccount>
+        </AdminAccount> */}
       </StyledToolbar>
-      <Menu
+      {/* <Menu
         id="fade-menu"
         MenuListProps={{
           "aria-labelledby": "fade-button",
@@ -153,7 +153,7 @@ const NavbarAdmin = (props) => {
         <MenuItem onClick={handleClose}>Profile</MenuItem>
         <MenuItem onClick={handleClose}>My account</MenuItem>
         <MenuItem onClick={handleClose}>Logout</MenuItem>
-      </Menu>
+      </Menu> */}
     </AppBar>
   );
 };

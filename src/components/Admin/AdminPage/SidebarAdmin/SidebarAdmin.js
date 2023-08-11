@@ -147,7 +147,7 @@ const SidebarAdmin = (props) => {
         </List>
         <Box sx={{flex:'1'}}/>
         <Stack direction='column' gap={3} sx={{display:'flex',alignItems:'center',padding:'0 32px',justifyContent:'center'}}>
-          <MaterialUISwitch checked={darkMode} onChange={()=>setDarkMode(!darkMode)}/>
+          {/* <MaterialUISwitch checked={darkMode} onChange={()=>setDarkMode(!darkMode)}/> */}
           <BtnLogout startIcon={<Logout/>} variant='outlined'>Logout</BtnLogout>
         </Stack>
     </Box>

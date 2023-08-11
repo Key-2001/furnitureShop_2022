@@ -44,7 +44,6 @@ import EditProduct from "./components/Admin/AdminPage/ProductPage/EditProduct";
 import CheckoutSuccess from "./components/Cart/Checkout/Success/CheckoutSuccess";
 import OrderDetail from "./components/User/Order/Detail/OrderDetail"
 import OrderDetailAdmin from './components/Admin/AdminPage/OrderPage/OrderDetailPage/OrderDetailAdmin'
-import MessengerCustomerChat from 'react-messenger-customer-chat';
 
 AOS.init();
 
@@ -102,10 +101,6 @@ function App() {
   //!Render
   return (
     <BrowserRouter>
-      {/* <MessengerCustomerChat
-          pageId="100079656370814"
-          appId="811703723654292"
-        /> */}
       <div id='alert-success' className='alertAuth hide'>
             <Alert severity="success">
                 <AlertTitle>Login Success</AlertTitle>

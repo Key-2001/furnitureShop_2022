@@ -5,7 +5,7 @@ const Footer = (props) => {
   return (
     <footer className={`${isAdminPage?'display-none':''}`}>
         <h5>
-          2022 <span>comfySloth</span>
+          2023 <span>comfySloth</span>
         </h5>
         <h5>
           ALL rights reserved

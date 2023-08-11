@@ -29,7 +29,7 @@ const OrderDetailItem = React.memo((props) => {
                         <Box sx={{backgroundColor: `${order?.color}`, width: '40px', height: '40px', borderRadius: '8px'}}/>
                     </Grid>
                     <Grid item xs={3}>
-                        Số lượng: {order?.amount}
+                        Quantity: {order?.amount}
                     </Grid>
                 </Grid>
             </AccordionSummary>
@@ -45,7 +45,7 @@ const OrderDetailItem = React.memo((props) => {
                             <Grid item xs={12} sx={{display: 'flex'}}>
                                 <Box sx={{width: '50%'}}>
                                     <Typography variant='subtitle2'>
-                                        Giá sản phẩm
+                                        Price
                                     </Typography>
                                 </Box>
                                 <Box sx={{width: '50%'}}>
@@ -57,7 +57,7 @@ const OrderDetailItem = React.memo((props) => {
                             <Grid item xs={12} sx={{display: 'flex'}}>
                                 <Box sx={{width: '50%'}}>
                                     <Typography variant='subtitle2'>
-                                        Tổng tiền
+                                        Total
                                     </Typography>
                                 </Box>
                                 <Box sx={{width: '50%'}}>

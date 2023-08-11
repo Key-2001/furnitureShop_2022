@@ -48,7 +48,6 @@ const OrderDetailAdmin = (props) => {
     navigate("/admin/order", { replace: true });
   };
   const handleUpdateStateOrder = async (value) => {
-    console.log("hoatlaOrder", id, value);
     try {
       const response = await updateStatusOrder(value, id);
       const { statusCode } = response?.data;
@@ -118,7 +117,7 @@ const OrderDetailAdmin = (props) => {
               gap: ".25rem",
             }}
           >
-            <Typography variant="h6">Hoá đơn</Typography>
+            <Typography variant="h6">Order</Typography>
             <Typography variant="h6" sx={{ color: "#DECBC0" }}>
               {orderDetail?._id}
             </Typography>
@@ -136,7 +135,7 @@ const OrderDetailAdmin = (props) => {
             }}
           >
             <Box sx={{ width: "30%" }}>
-              <Typography variant="subtitle1">Khách hàng</Typography>
+              <Typography variant="subtitle1">Customer</Typography>
             </Box>
             <Box
               sx={{
@@ -162,7 +161,7 @@ const OrderDetailAdmin = (props) => {
             }}
           >
             <Box sx={{ width: "30%" }}>
-              <Typography variant="subtitle1">Số điện thoại</Typography>
+              <Typography variant="subtitle1">Phone number</Typography>
             </Box>
             <Box
               sx={{
@@ -213,7 +212,7 @@ const OrderDetailAdmin = (props) => {
               gap: "1.25rem",
             }}
           >
-            <Box sx={{ width: "30%" }}>Địa chỉ nhận hàng</Box>
+            <Box sx={{ width: "30%" }}>Address</Box>
             <Box
               sx={{
                 width: "70%",
@@ -257,7 +256,7 @@ const OrderDetailAdmin = (props) => {
         )}
         <Grid container sx={{ marginBottom: "2rem" }}>
           <Grid item xs={12} sx={{ marginBottom: "1rem" }}>
-            <Typography variant="subtitle1">Danh sách sản phẩm</Typography>
+            <Typography variant="subtitle1">Product list</Typography>
           </Grid>
           <Grid item xs={12}>
             {(orderDetail?.products || [])?.map((el) => {
@@ -278,7 +277,7 @@ const OrderDetailAdmin = (props) => {
               }}
             >
               <Box sx={{ width: "30%" }}>
-                <Typography variant="subtitle1">Mã discount</Typography>
+                <Typography variant="subtitle1">Discount code</Typography>
               </Box>
               <Box
                 sx={{
@@ -309,7 +308,7 @@ const OrderDetailAdmin = (props) => {
               }}
             >
               <Box sx={{ width: "50%" }}>
-                <Typography variant="subtitle1">Giá trị discount</Typography>
+                <Typography variant="subtitle1">Discount value</Typography>
               </Box>
               <Box
                 sx={{
@@ -338,7 +337,7 @@ const OrderDetailAdmin = (props) => {
             }}
           >
             <Box sx={{ width: "50%" }}>
-              <Typography variant="subtitle1">Kiểu thanh toán</Typography>
+              <Typography variant="subtitle1">Payment type</Typography>
             </Box>
             <Box
               sx={{
@@ -417,7 +416,7 @@ const OrderDetailAdmin = (props) => {
                       }}
                     >
                       <Typography variant="subtitle2">
-                        Trạng thái đơn hàng
+                        Status
                       </Typography>
                     </Box>
                     <Box sx={{ width: "50%" }}>
@@ -443,7 +442,7 @@ const OrderDetailAdmin = (props) => {
                       }}
                     >
                       <Typography variant="subtitle2">
-                        Trạng thái thanh toán
+                        Payment status
                       </Typography>
                     </Box>
                     <Box sx={{ width: "50%" }}>
@@ -462,7 +461,7 @@ const OrderDetailAdmin = (props) => {
                     sx={{ display: "flex", justifyContent: "flex-end" }}
                   >
                     <ButtonCustom
-                      title="Cập nhật"
+                      title="Update"
                       type="submit"
                       variant="contained"
                     />
@@ -494,7 +493,7 @@ const OrderDetailAdmin = (props) => {
               >
                 <Grid item xs={12}>
                   <Typography variant="subtitle2" sx={{ fontSize: "18px" }}>
-                    Tổng hoá đơn
+                    Total
                   </Typography>
                 </Grid>
                 <Grid

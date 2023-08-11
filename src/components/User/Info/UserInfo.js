@@ -98,7 +98,7 @@ const UserInfo = (props) => {
                                     Phone number
                                 </div>
                                 <div className='content-info'>
-                                    <FastField type='text' name='phoneNumber' placeholder='SĐT của bạn' onChange={(e) => handleChange(helperFormik, e.target.name, e.target.value)} disabled/>
+                                    <FastField type='text' name='phoneNumber' placeholder='Your phone number' onChange={(e) => handleChange(helperFormik, e.target.name, e.target.value)} disabled/>
                                 </div>
                             </div>
                             <div className='info-account-item'>
@@ -106,7 +106,7 @@ const UserInfo = (props) => {
                                     Email
                                 </div>
                                 <div className='content-info'>
-                                    <FastField type='email' name='email'  placeholder='Email của bạn' value={email} disabled/>
+                                    <FastField type='email' name='email'  placeholder='Your email' value={email} disabled/>
                                 </div>
                             </div>
                             <div className='info-account-item'>
@@ -114,7 +114,7 @@ const UserInfo = (props) => {
                                     Address
                                 </div>
                                 <div className='content-info'>
-                                    <FastField type='text' name='address' placeholder='Địa chỉ của bạn' onChange={(e) => handleChange(helperFormik, e.target.name, e.target.value)} disabled={isTogglePass}/>
+                                    <FastField type='text' name='address' placeholder='Your address' onChange={(e) => handleChange(helperFormik, e.target.name, e.target.value)} disabled={isTogglePass}/>
                                 </div>
                             </div>
                             <div className='option-user'>
@@ -139,7 +139,7 @@ const UserInfo = (props) => {
                                             Old password
                                         </div>
                                         <div className='content-info'>
-                                            <input id='old-pass' name='oldPassword' type='password' placeholder='Mật khẩu cũ' onChange={(e) => handleChange(helperFormik, e.target.name, e.target.value)}/>
+                                            <input id='old-pass' name='oldPassword' type='password' placeholder='Old password ...' onChange={(e) => handleChange(helperFormik, e.target.name, e.target.value)}/>
                                             {helperFormik.errors.oldPassword && <span className='err'>{helperFormik.errors.oldPassword}</span>}
                                         </div>
                                     </div>
@@ -148,7 +148,7 @@ const UserInfo = (props) => {
                                             New password
                                         </div>
                                         <div className='content-info'>
-                                            <input id='new-pass' name='newPassword' type='password' placeholder='Mật khẩu mới' onChange={(e) => handleChange(helperFormik, e.target.name, e.target.value)}/>
+                                            <input id='new-pass' name='newPassword' type='password' placeholder='New password' onChange={(e) => handleChange(helperFormik, e.target.name, e.target.value)}/>
                                             {helperFormik.errors.newPassword && <span className='err'>{helperFormik.errors.newPassword}</span>}
                                         </div>
                                     </div>
@@ -157,7 +157,7 @@ const UserInfo = (props) => {
                                             Confirm password
                                         </div>
                                         <div className='content-info'>
-                                            <input id='check-pass' name='newPasswordConfirm' type='password' placeholder='Nhập lại mật khẩu' onChange={(e) => handleChange(helperFormik, e.target.name, e.target.value)}/>
+                                            <input id='check-pass' name='newPasswordConfirm' type='password' placeholder='Confirm new password' onChange={(e) => handleChange(helperFormik, e.target.name, e.target.value)}/>
                                             {helperFormik.errors.newPasswordConfirm &&<span className='err'>{helperFormik.errors.newPasswordConfirm}</span>}
                                         </div>
                                     </div>

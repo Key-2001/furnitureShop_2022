@@ -117,28 +117,28 @@ const Register = ({setIsFormAuth}) => {
                       {(helperFormik) => {
                         return(
                           <Form className='wrap-login-container-content-form'>
-                              <h3 className='wrap-login-container-content-form-title'>Đăng ký tài khoản</h3>
+                              <h3 className='wrap-login-container-content-form-title'>Sign up</h3>
                               <div className='wrap-login-container-content-form-item'>
-                                  <FastField  name='phoneNumber' type='text' id='phoneNumber' placeholder='SĐT của bạn!' className={helperFormik.errors.phoneNumber && 'border-err'}/>
+                                  <FastField  name='phoneNumber' type='text' id='phoneNumber' placeholder='You phone number' className={helperFormik.errors.phoneNumber && 'border-err'}/>
                                   <span className='err-text'>
                                       <ErrorMessage name='phoneNumber'/>
                                   </span>
                               </div>
                               <div className='wrap-login-container-content-form-item'>
-                                  <FastField name='name' type='text' id='name' placeholder='Tên của bạn!' className={helperFormik.errors.name && 'border-err'}/>
+                                  <FastField name='name' type='text' id='name' placeholder='Your name' className={helperFormik.errors.name && 'border-err'}/>
                                   <span className='err-text'>
                                       <ErrorMessage name='name'/>
                                   </span>
                               </div>
                               <div className='wrap-login-container-content-form-item'>
-                                  <FastField name='email' type='text' id='email' placeholder='Email của bạn!' className={helperFormik.errors.email && 'border-err'}/>
+                                  <FastField name='email' type='text' id='email' placeholder='Your email' className={helperFormik.errors.email && 'border-err'}/>
                                   <span id='errTextEmail' className='err-text'>
                                       <ErrorMessage name='email'/>
                                   </span>
                               </div>
                               <div className='wrap-login-container-content-form-item'>
                                   <div className='relative'>
-                                      <Field name='password' type={`${checkEye.isEye ? 'text' : 'password'}`} id='password' placeholder='Mật khẩu phải có ít nhất 6 kí tự!' className={helperFormik.errors.password && 'border-err'}/>
+                                      <Field name='password' type={`${checkEye.isEye ? 'text' : 'password'}`} id='password' placeholder='Password must be at least 6 characters' className={helperFormik.errors.password && 'border-err'}/>
                                       <span id='eyePass' className='wrap-login-container-content-form-item-icon' onClick={() => setCheckEye((prev) => {
                                           return{
                                               ...prev,
@@ -156,7 +156,7 @@ const Register = ({setIsFormAuth}) => {
                               </div>
                               <div className='wrap-login-container-content-form-item'>
                                   <div className='relative'>
-                                      <Field name='checkPassword' type={`${checkEye.isEyeSecond ? 'text' : 'password'}`} id='checkPassword' placeholder='Vui lòng nhập lại mật khẩu!' className={helperFormik.errors.checkPassword && 'border-err'} />
+                                      <Field name='checkPassword' type={`${checkEye.isEyeSecond ? 'text' : 'password'}`} id='checkPassword' placeholder='Confirm your password' className={helperFormik.errors.checkPassword && 'border-err'} />
                                       <span id='eyeCheckPass' className='wrap-login-container-content-form-item-icon' onClick={() => setCheckEye((prev) => {
                                           return{
                                               ...prev,
@@ -171,7 +171,7 @@ const Register = ({setIsFormAuth}) => {
                                   </span>
                               </div>
                               <button type='submit' className='wrap-login-container-content-form-btn'>
-                                  Đăng ký
+                                  Sign up
                               </button>
                               {/* <div className='login-or-divider'>
                                   hoặc
@@ -203,7 +203,7 @@ const Register = ({setIsFormAuth}) => {
                                 isLogin: true,
                                 isSignUp: false,
                             }
-                        })}>Đăng nhập</span>
+                        })}>Login</span>
                         
                     </div>
                 </div>

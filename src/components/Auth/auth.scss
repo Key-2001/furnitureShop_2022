@@ -28,14 +28,16 @@ $bg-btn-hover:#decbc0;
     align-items: center;
     justify-content: center;
     margin-bottom: 1rem;
-    &::before,
-    &::after{
-        content: '';
-        height: 1px;
-        flex: 1;
-        // margin: 0 .5rem;
-        background-color: #5f4435;
-    }
+    background-color: #5f4435;
+    height: 1px;
+    // &::before,
+    // &::after{
+    //     content: '';
+    //     height: 1px;
+    //     flex: 1;
+    //     margin: 0 .5rem;
+    //     background-color: #5f4435;
+    // }
 }
          
 .btn-reset {

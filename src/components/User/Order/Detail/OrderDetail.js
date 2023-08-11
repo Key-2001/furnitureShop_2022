@@ -38,7 +38,7 @@ const OrderDetail = (props) => {
   const classes = useStyles();
   //! State
   const [expanded, setExpanded] = useState(false);
-  const enumStatusCheck = enumStatus?.find(el => el?.status === order?.value)
+  const enumStatusCheck = enumStatus?.find(el => el?.value === order?.status)
   const {data: listCity, isLoading} = useGetCityOption();
 
   const addressConvert = handleGetAddressCity(order?.address, listCity);

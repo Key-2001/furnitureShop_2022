@@ -35,7 +35,7 @@ const ForgotPassword = ({setIsFormAuth}) => {
                     <div className='wrap-login-container-content'>
                         <AiOutlineClose className='close-icon' onClick={() => handleClose()}/>
                         <h3 className='wrap-login-container-content-form-title'>
-                            Lấy lại mật khẩu
+                            Password retrieval
                         </h3>
                         {isLoading && <Loading/>}
                         <div className='wrap-login-container-content-other-option center'>
@@ -84,16 +84,16 @@ const ForgotPassword = ({setIsFormAuth}) => {
                     >
                         <Form className='wrap-login-container-content-form'>
                             <h3 className='wrap-login-container-content-form-title'>
-                                Lấy lại mật khẩu
+                                Password retrieval
                             </h3>
                             <div className='wrap-login-container-content-form-item'>
-                                <FastField type='email' name='email' id='email' placeholder='Email của bạn'/>
+                                <FastField type='email' name='email' id='email' placeholder='Your email!!!'/>
                                 <span id='errTextEmail' className='err-text'>
                                     <ErrorMessage name='email'/>
                                 </span>
                             </div>
                             <button type='submit' className='wrap-login-container-content-form-btn'>
-                                Kiểm tra 
+                                Check
                             </button>
                             
                         </Form>
@@ -106,7 +106,7 @@ const ForgotPassword = ({setIsFormAuth}) => {
                                 isLogin: true,
                                 isForgotPassword: false,
                             }
-                        })}>Đăng nhập</span>
+                        })}>Login</span>
                     </div>
                 </div>
             </div>

@@ -46,7 +46,7 @@ const Products = () => {
     category: "",
     company: "",
     color: "",
-    price: 500,
+    price: 5000,
     shipping: false,
     sort: getSortType(),
   });
@@ -231,7 +231,7 @@ const Products = () => {
                 <input
                   type="range"
                   min="0"
-                  max="4000"
+                  max="10000"
                   name="price"
                   value={query?.price}
                   onChange={handleChangePriceQuery}

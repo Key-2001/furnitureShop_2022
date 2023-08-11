@@ -59,15 +59,15 @@ const ActionTable = React.memo((props) => {
         </DialogTitle>
         <DialogContent>
           <DialogContentText>
-            Bạn chắc chắn muốn xoá user {`${params?.row?.name} ?` }
+            Do you want to delete user {`${params?.row?.name} ?` }
           </DialogContentText>
         </DialogContent>
         <DialogActions>
           <Button autoFocus onClick={handleCloseDialogDelete}>
-            Huỷ bỏ
+            Cancel
           </Button>
           <Button onClick={handleDelete}>
-            Xác nhận
+            Confirm
           </Button>
         </DialogActions>
       </Dialog>

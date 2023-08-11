@@ -67,13 +67,13 @@ const Login = ({ setIsFormAuth }) => {
               enableReinitialize
               validationSchema={Yup.object({
                 phoneNumber: Yup.string()
-                  .required("Vui lòng nhập SĐT của bạn!")
-                  .max(10, "SĐT không hợp lệ!")
-                  .min(10, "SĐT không hợp lệ!")
+                  .required("Require!")
+                  .max(10, "Invalid phone number!")
+                  .min(10, "Invalid phone number!")
                   .trim(),
                 password: Yup.string()
-                  .required("Không được để trống trường mật khẩu!")
-                  .min(6, "Mật khẩu không hợp lệ!")
+                  .required("Require!")
+                  .min(6, "Invalid password!")
                   .trim(),
               })}
               onSubmit={(values, formikBag) => {
@@ -84,14 +84,14 @@ const Login = ({ setIsFormAuth }) => {
                 return (
                   <Form className="wrap-login-container-content-form">
                     <h3 className="wrap-login-container-content-form-title">
-                      Đăng nhập
+                      Login
                     </h3>
                     <div className="wrap-login-container-content-form-item">
                       <FastField
                         type="text"
                         name="phoneNumber"
                         id="phoneNumber"
-                        placeholder="SĐT của bạn"
+                        placeholder="Phone number"
                         className={
                           helperFormik.errors.phoneNumber && "border-err"
                         }
@@ -106,7 +106,7 @@ const Login = ({ setIsFormAuth }) => {
                           name="password"
                           type={`${isEye ? "text" : "password"}`}
                           id="password"
-                          placeholder="Mật khẩu phải có ít nhất 6 kí tự!"
+                          placeholder="Password must be at least 6 characters!"
                           className={
                             helperFormik.errors.password && "border-err"
                           }
@@ -133,7 +133,7 @@ const Login = ({ setIsFormAuth }) => {
                       type="submit"
                       className="wrap-login-container-content-form-btn"
                     >
-                      Đăng nhập
+                      Login
                     </button>
                   </Form>
                 );
@@ -168,7 +168,7 @@ const Login = ({ setIsFormAuth }) => {
                   })
                 }
               >
-                Đăng ký tài khoản mới
+                Sign up
               </span>
               <span
                 onClick={() =>
@@ -181,7 +181,7 @@ const Login = ({ setIsFormAuth }) => {
                   })
                 }
               >
-                Quên mật khẩu
+                Forgot password
               </span>
             </div>
           </div>
