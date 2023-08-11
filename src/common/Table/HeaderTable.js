@@ -110,17 +110,6 @@ const HeaderTable = (props) => {
           onClick={handleCreate}
         />}
         {
-          handleFullScreen && 
-          <>
-            {
-              handleFullScreen?.active ?
-                <FullscreenExitIcon sx={flexCenterIcon} onClick={handleFullScreen?.exit}/>
-              :
-                <FullscreenIcon sx={flexCenterIcon} onClick={handleFullScreen?.enter}/>
-            }
-          </>
-        }
-        {
           handleRefreshData && 
           <ReplayIcon sx={flexCenterIcon} onClick={handleRefresh}/>
         }
