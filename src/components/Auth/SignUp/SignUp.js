@@ -84,8 +84,6 @@ const Register = ({setIsFormAuth}) => {
                             password: '',
                             checkPassword:  ''
                         }}
-                        validate={(err) => {
-                        }}
                         validationSchema= { Yup.object({
                             name: Yup.string()
                                 .required('Pls enter your name!')
@@ -111,6 +109,9 @@ const Register = ({setIsFormAuth}) => {
                                 .oneOf([Yup.ref('password')], 'Passwords must match')
                                 
                         })}
+                        validateOnMount={false}
+                        validateOnBlur={false}
+                        validateOnChange={false}
                         onSubmit = {(values, formikBag) => handleCreateUser(values, formikBag)}
                         
                     > 
@@ -173,25 +174,6 @@ const Register = ({setIsFormAuth}) => {
                               <button type='submit' className='wrap-login-container-content-form-btn'>
                                   Sign up
                               </button>
-                              {/* <div className='login-or-divider'>
-                                  hoặc
-                              </div> */}
-                              {/* <div className='wrap-login-container-content-form-facebook'>
-                                  <div className='wrap-login-container-content-form-facebook-inner'>
-                                      Đăng nhập với Facebook
-                                  </div>
-                                  <div className='wrap-login-container-content-form-facebook-img'>
-                                      <img src='https://www.coolmate.me/images/facebook.svg' alt='facebookLogo'/>
-                                  </div>
-                              </div>
-                              <div className='wrap-login-container-content-form-google'>
-                                  <div className='wrap-login-container-content-form-google-inner'>
-                                      Đăng nhập với Google
-                                  </div>
-                                  <div className='wrap-login-container-content-form-google-img'>
-                                      <img src='https://www.coolmate.me/images/google.svg' alt='googleLogo'/>
-                                  </div>
-                              </div> */}
                           </Form>
                         )
                       }}

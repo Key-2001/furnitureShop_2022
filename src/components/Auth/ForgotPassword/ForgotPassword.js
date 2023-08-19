@@ -37,7 +37,7 @@ const ForgotPassword = ({setIsFormAuth}) => {
                         <h3 className='wrap-login-container-content-form-title'>
                             Password retrieval
                         </h3>
-                        {isLoading && <Loading/>}
+                        {isLoading && <Loading isForgotPass={true}/>}
                         <div className='wrap-login-container-content-other-option center'>
                             <span style={{fontSize:'18px'}}>Please check your email!!</span>
                         </div>
@@ -79,6 +79,7 @@ const ForgotPassword = ({setIsFormAuth}) => {
                         })}
                         onSubmit={(values,formikBag) => {
                             const {email} = values;
+                            setIsMsgBox(true)
                             dispatch(sendCheckEmail(email))
                         }}
                     >

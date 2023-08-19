@@ -76,6 +76,9 @@ const Login = ({ setIsFormAuth }) => {
                   .min(6, "Invalid password!")
                   .trim(),
               })}
+              validateOnBlur={false}
+              validateOnChange={false}
+              validateOnMount={false}
               onSubmit={(values, formikBag) => {
                 dispatch(loginUserRedux(values));
               }}
